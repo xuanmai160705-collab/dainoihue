@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đại Nội – Hoàng Thành Huế</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Times New Roman", serif;
+        }
+
+        body {
+            background-color: #f5f1e8;
+        }
+
+        /* ===== MENU ===== */
+        nav {
+            background: linear-gradient(to right, #7b3f00, #a86b2d);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffd966;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== TRANG CHỦ ===== */
+        #home {
+            height: 100vh;
+            background: url("images/home.jpg") center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
+       #home h1 {
+    background: none;        
+    padding: 0;
+    font-size: 64px;          
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+    text-transform: uppercase;
+}        /* ===== KHUNG PHẦN ===== */
+        .section {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 40px;
+            background: #fffaf0;
+            border: 4px solid #c9a14a;
+            border-radius: 20px;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 34px;
+            color: #7b3f00;
+            margin-bottom: 25px;
+        }
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.8;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* ===== LƯỚI ẢNH 2x2 ===== */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .card {
+            background: #fdf6e3;
+            border: 3px solid #b88a44;
+            border-radius: 15px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card p {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #5a2e0c;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- MENU -->
+<nav>
+    <a href="#home">Trang Chủ</a>
+    <a href="#gioithieu">Giới thiệu</a>
+    <a href="#kientruc">Kiến trúc</a>
+    <a href="#vanhoa">Văn hóa</a>
+    <a href="#giaitri">Giải trí</a>
+</nav>
+
+<!-- TRANG CHỦ -->
+<section id="home">
+    <h1>
+        Đại Nội – Hoàng Thành Huế<br>
+        Di sản văn hóa thế giới<br>
+        Dấu ấn Hoàng triều Nguyễn
+    </h1>
+</section>
+
+<!-- GIỚI THIỆU -->
+<section id="gioithieu" class="section">
+    <h2>Giới thiệu Đại Nội Huế</h2>
+    <p>
+        Đại Nội Huế là trung tâm của Quần thể di tích Cố đô Huế,
+        được xây dựng từ đầu thế kỷ XIX dưới triều Nguyễn.
+        Đây là nơi sinh hoạt và làm việc của vua cùng hoàng gia,
+        mang đậm dấu ấn kiến trúc cung đình phong kiến Việt Nam.
+    </p>
+    <p>
+        Công trình được UNESCO công nhận là Di sản Văn hóa Thế giới,
+        có giá trị lớn về lịch sử, kiến trúc và văn hóa dân tộc.
+    </p>
+
+    <h2>Lịch sử hình thành</h2>
+    <p>
+     Đại Nội được xây dựng từ năm 1804, dưới thời vua Gia Long.
+
+     Công trình được mở rộng, hoàn thiện qua nhiều đời vua như Minh Mạng, Thiệu Trị, Tự Đức.
+
+     Trải qua chiến tranh và thời gian, Đại Nội bị hư hại nhiều nhưng hiện nay đang được trùng tu, bảo tồn.
+    </p>
+   </section>
+
+<!-- KIẾN TRÚC -->
+<section id="kientruc" class="section">
+    <h2>Kiến trúc</h2>
+    <p>
+       Đại Nội gồm 3 vòng thành chính:
+
+Kinh Thành: vòng ngoài cùng, nơi bảo vệ kinh đô.
+
+Hoàng Thành: nơi diễn ra các hoạt động triều chính.
+
+Tử Cấm Thành: khu vực sinh hoạt riêng của vua và hoàng gia.
+    </p>
+    <div class="grid">
+        <div class="card">
+            <img src="images/ngomon.png">
+            <p>Ngọ Môn</p>
+        </div>
+        <div class="card">
+            <img src="images/thaihoa.jpg">
+            <p>Điện Thái Hòa</p>
+        </div>
+        <div class="card">
+            <img src="images/tucamthanh.jpg">
+            <p>Tử Cấm Thành</p>
+        </div>
+        <div class="card">
+            <img src="images/hienlamcac.webp">
+            <p>Hiển Lâm Các</p>
+        </div>
+    </div>
+</section>
+
+<!-- VĂN HÓA -->
+<section id="vanhoa" class="section">
+    <h2>Văn hóa</h2>
+    <p>
+        Đại Nội Huế phản ánh quyền lực phong kiến, tư tưởng Nho giáo và nghệ thuật kiến trúc cung đình.
+        Là minh chứng cho trình độ xây dựng, quy hoạch tinh xảo của người Việt xưa.
+        Năm 1993, Đại Nội Huế được UNESCO công nhận là Di sản Văn hóa Thế giới.
+        Đại Nội Huế là nơi lưu giữ nhiều giá trị văn hóa đặc sắc
+        như nhã nhạc cung đình, lễ nghi hoàng triều và phong tục truyền thống.
+    </p>
+    <div class="grid">
+        <div class="card">
+            <img src="images/vanhoa1.jpg">
+            <p>Nhã nhạc cung đình Huế:Là loại hình âm nhạc phục vụ vua chúa, được UNESCO công nhận là Di sản văn hoá phi vật thể của nhân loại.</p>
+        </div>
+        <div class="card">
+            <img src="images/vanhoa2.jfif">
+            <p>Lễ nghi hoàng triều: các nghi thức trang nghiêm của triều Nguyễn, thể hiện quyền uy vua và nét văn hoá cung đình Huế.</p>
+        </div>
+        <div class="card">
+            <img src="images/vanhoa3.jpg">
+            <p> Văn hoá chữ Hán – Nôm:Thể hiện qua hoành phi, câu đối, bia đá trong Đại Nội, phản ánh tư tưởng Nho giáo và đạo lý phong kiến.</p>
+        </div>
+        <div class="card">
+            <img src="images/vanhoa4.jpg">
+            <p>Sinh hoạt văn hoá hoàng gia:
+Bao gồm ẩm thực cung đình, trang phục vua quan, phong cách sống thanh nhã, chuẩn mực.</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- GIẢI TRÍ -->
+<section id="giaitri" class="section">
+    <h2>Giải trí</h2>
+    <p>
+        Du khách đến Đại Nội Huế có thể tham gia các hoạt động tham quan,
+        xem biểu diễn nghệ thuật truyền thống và trải nghiệm không gian cổ kính.
+    </p>
+    <div class="grid">
+        <div class="card">
+            <img src="images/giaitri1.jpg">
+            <p>Đến Duyệt Thị Đường xem biểu diễn âm nhạc cung đình</p>
+        </div>
+        <div class="card">
+            <img src="images/giaitri2.jpg">
+            <p>Ghé cung Diên Thọ thưởng trà,ngắm hoa</p>
+        </div>
+        <div class="card">
+            <img src="images/giaitri3.jpg">
+            <p>Ngồi xích lô tham quan Đại Nội Huế</p>
+        </div>
+        <div class="card">
+            <img src="images/giaitri4.jpg">
+            <p>Chụp ảnh ở Đại Nội Huế</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
